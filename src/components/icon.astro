@@ -1,0 +1,4 @@
+---
+const {title} = Astro.props;
+---
+<svg class={'icon icon-' + title}><use xlink:href={'/assets/icons.svg#' + title}/></svg>

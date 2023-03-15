@@ -1,0 +1,48 @@
+/* ------- Buttons ------- */
+
+button,
+.button {
+	appearance: none;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	box-shadow: none;
+	background-color: transparent;
+	cursor: pointer;
+	user-select: none;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 0 1rem;
+	width: fit-content;
+	height: 2.7rem;
+	border-radius: $radius-button;
+	box-shadow: none;
+	font-family: $base-font-family;
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 1.25;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $white;
+	background: $accent;
+	transition: $duration background, $duration color, $duration border-color, $duration box-shadow;
+
+	&_fill {
+		width: 100%;
+	}
+
+	&_center {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	@include hover {
+		background: $accent-second;
+	}
+}

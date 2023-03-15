@@ -1,0 +1,26 @@
+/* ------- Scrollbar ------- */
+.simplebar-scrollbar {
+	&::before {
+		top: 0.3rem;
+		bottom: 0.3rem;
+		left: 0.3rem;
+		right: 0.3rem;
+		opacity: 1;
+		background: $accent;
+	}
+
+	&.simplebar-hover {
+		cursor: pointer;
+		pointer-events: auto;
+	}
+
+	&.simplebar-visible {
+		&::before {
+			opacity: 1;
+		}
+	}
+}
+
+.simplebar-track.simplebar-vertical {
+	width: 1rem;
+}

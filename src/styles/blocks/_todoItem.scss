@@ -1,0 +1,100 @@
+/* ------- todoItem ------- */
+.todoItem {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	padding: 0.9rem 0;
+	cursor: pointer;
+
+	&__check {
+		display: flex;
+		flex-shrink: 0;
+		justify-content: center;
+		align-items: center;
+		width: 2rem;
+		height: 2rem;
+		border-radius: $radius-sm;
+		background: $grey;
+		transition: $duration background;
+		will-change: opacity;
+
+		svg {
+			width: 1.2rem;
+			height: 1.2rem;
+			opacity: 0;
+			transition: $duration opacity;
+			will-change: opacity;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		color: $white;
+		transition: $duration color;
+	}
+
+	&__content {
+		max-width: calc(100% - 3.5rem);
+	}
+
+	&__description {
+		position: relative;
+		padding-top: 0.3rem;
+		font-size: 1.2rem;
+		white-space: nowrap;
+		overflow: hidden;
+		color: $grey;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 3.4rem;
+			background: linear-gradient(to left, $primary 9.38%, rgba($primary, 0) 66.15%);
+		}
+	}
+
+	&.is-completed {
+		.todoItem {
+			&__check {
+				background: $accent;
+
+				svg {
+					opacity: 1;
+				}
+			}
+
+			&__title {
+				text-decoration-line: line-through;
+				color: $grey;
+			}
+		}
+
+		@include hover {
+			.todoItem {
+				&__check {
+					background: $accent;
+				}
+	
+				&__title {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	@include hover {
+		.todoItem {
+			&__check {
+				background: rgba($accent, 0.2);
+			}
+
+			&__title {
+				color: $accent;
+			}
+		}
+	}
+}

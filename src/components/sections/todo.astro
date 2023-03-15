@@ -1,0 +1,34 @@
+---
+import TodoItem from '../blocks/todoItem.astro';
+---
+
+<section class="todo">
+	<div class="container">
+		<div class="todo__wrapper">
+			<div class="todo__box">
+				<div class="todo__header">
+					<h1 class="todo__title">Todo list</h1>
+					<div class="todo__wrapButton">
+						<button type="button" class="todo__addButton button">Add</button>
+					</div>
+				</div>
+				<div class="todo__scroll" data-scrollbar>
+					<div class="todo__items">
+						<TodoItem className="todo__item js-todo-item" title="delectus aut autem" description="laboriosam mollitia et enim quasi adipisci quia provident illum"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="quo laboriosam deleniti aut qui"></TodoItem>
+						<TodoItem className="todo__item js-todo-item is-completed" title="laboriosam mollitia et enim quasi adipisci quia provident illum"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+						<TodoItem className="todo__item js-todo-item" title="repellendus sunt dolores architecto voluptatum" description="accusamus eos facilis sint et aut voluptatem"></TodoItem>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

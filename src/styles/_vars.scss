@@ -1,0 +1,62 @@
+// Base
+$base-font-family: "Montserrat", "Arial", sans-serif;
+$base-font-weight: 400;
+$base-font-size: 1.6rem;
+$base-line-height: 1.25;
+$base-color: #fff;
+$base-background: #252e42;
+
+// Fonts
+$font-primary: $base-font-family;
+ 
+// Font sizes
+$font-size-normal: $base-font-size;
+
+// Colors
+$primary: #252e42;
+$accent: #ff8469;
+$accent-second: #d95133;
+$black: #000;
+$dark: #161C2E;
+$white: #fff;
+$grey: #4F5565;
+$grey-second: #414b62;
+$blue-dark: #31394D;
+$blue-dark-second: #091739;
+
+$link: inherit;
+
+// Container
+$container: 120rem;
+$min-width: 320px;
+$gutters: 3rem;
+$gutters-mobile: 1.6rem;
+
+// Todo size
+$todo-width: 42rem;
+
+// Breakpoints
+$grid-breakpoints: (
+	mob-xxs: 375px,
+	mob-xs: 420px,
+	mob-sm: 480px,
+	mob-m: 576px,
+	mob: 768px,
+	tab: 992px,
+	tab-l: 1024px,
+	pc: 1200px,
+	netbook: 1340px,
+	pc-l: 1440px, 
+	pc-md: 1600px,
+	pc-xl: 1680px,
+	pc-xxl: 1920px
+);
+
+// Animation
+$duration: 0.3s;
+$duration-lazy: 0.6s;
+
+// Other
+$radius: 2rem;
+$radius-sm: 0.6rem;
+$radius-button: 0.7rem;

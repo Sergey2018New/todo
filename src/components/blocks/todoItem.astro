@@ -1,0 +1,16 @@
+---
+import Icon from '../icon.astro';
+const { className, title, description } = Astro.props;
+---
+
+<div class={'todoItem' + (className ? ' ' + className : '')}>
+	<div class="todoItem__check">
+		<Icon title="check"></Icon>
+	</div>
+	<div class="todoItem__content">
+		<div class="todoItem__title">
+			<Fragment set:html={title} />
+		</div>
+		{description ? <div class="todoItem__description"><Fragment set:html={description} /></div> : ''}
+	</div>
+</div>
